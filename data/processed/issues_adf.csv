@@ -1,0 +1,3 @@
+type,ADF_stat,p_value,Conclusion
+IssueCommentEvent,-1.0827360984973062,0.9319017443527448,Non-stationary
+IssuesEvent,-5.017817081167772,0.0001909104328879882,Stationary (p < 0.01)

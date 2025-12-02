@@ -1,0 +1,5 @@
+type,ADF_stat,p_value,Conclusion
+GollumEvent,-3.2358956365456293,0.07748340868741321,Weakly stationary (p < 0.10)
+MemberEvent,-6.09798644214993,1.3641084356033744e-06,Stationary (p < 0.01)
+PublicEvent,0.24523733639337378,0.9960178819590597,Non-stationary
+ReleaseEvent,-1.7908132614819812,0.7091711172783389,Non-stationary

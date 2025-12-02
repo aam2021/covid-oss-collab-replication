@@ -1,0 +1,4 @@
+type,ADF_stat,p_value,Conclusion
+CreateEvent,-1.2007843647102563,0.9103420164234194,Non-stationary (** p > 0.01 **)
+DeleteEvent,-2.433706737791494,0.36185837004853283,Non-stationary (** p > 0.01 **)
+PushEvent,-2.109950953200062,0.5405200468454397,Non-stationary (** p > 0.01 **)

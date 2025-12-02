@@ -1,0 +1,15 @@
+Group,Event,Description
+Solo Development,CreateEvent,Emitted when a git branch or tag is created.
+Solo Development,PushEvent,Emitted when commits are pushed to a repository.
+Solo Development,DeleteEvent,Emitted when a git branch or tag is deleted.
+Core Team,GollumEvent,Emitted when a wiki page is created or updated.
+Core Team,MemberEvent,Emitted when repository collaborators are added or removed.
+Core Team,PublicEvent,Emitted when a private repository is made public.
+Core Team,ReleaseEvent,Emitted when a new release is published.
+Code Review,CommitCommentEvent,Emitted when comments are made on commits.
+Code Review,PullRequestEvent,"Emitted when there is activity on pull requests (opened, closed, merged, or assigned)."
+Code Review,PullRequestReviewEvent,Emitted when a pull request review is submitted or updated.
+Code Review,PullRequestReviewCommentEvent,Emitted when comments are added within pull request reviews.
+Issues,IssuesEvent,"Emitted when there is activity on an issue (opened, closed, labeled, etc.)."
+Issues,IssueCommentEvent,Emitted when comments are added or edited on issues.
+Community,WatchEvent,Emitted when a user stars or watches a repository.
