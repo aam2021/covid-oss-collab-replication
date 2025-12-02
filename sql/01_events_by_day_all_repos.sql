@@ -1,19 +1,18 @@
 -- 01_events_by_day_all_repos.sql
--- 
+--
 -- Purpose:
---   Compute daily counts of selected GitHub event types from GH Archive
---   for two balanced windows:
+--   Aggregate daily counts of 14 GitHub event types from GH Archive
+--   for:
 --     - Pre-COVID: 2017-01-01 to 2019-12-31
 --     - Post-COVID: 2023-01-01 to 2025-10-27
 --
--- Source:
---   BigQuery public dataset: `githubarchive.day`
---
 -- Output columns:
---   event_date   - DATE (YYYY-MM-DD)
---   year         - INTEGER (calendar year)
---   type         - STRING (GitHub event type)
---   total_events - INTEGER (daily count of events of this type)
+--   event_date   (DATE)
+--   year         (INTEGER)
+--   type         (STRING)      -- GitHub event type
+--   total_events (INTEGER)     -- daily count of that event type
+--
+-- Dataset: githubarchive.day
 
 WITH daily_counts AS (
   -- Post-COVID (2023–2025)
@@ -23,7 +22,7 @@ WITH daily_counts AS (
     2025 AS year,
     _TABLE_SUFFIX AS suffix
   FROM `githubarchive.day.2025*`
-  -- Limit to data up to 2025-10-27 to match the study period
+  -- align with study window (up to 2025-10-27)
   WHERE _TABLE_SUFFIX <= '1027'
   GROUP BY type, _TABLE_SUFFIX
 
@@ -80,7 +79,6 @@ WITH daily_counts AS (
 )
 
 SELECT
-  -- Reconstruct full YYYYMMDD before parsing
   PARSE_DATE('%Y%m%d', CONCAT(CAST(year AS STRING), suffix)) AS event_date,
   year,
   type,
