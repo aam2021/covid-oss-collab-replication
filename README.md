@@ -1,5 +1,3 @@
-# covid-oss-collab-replication
-
 # Replication Package – From Pandemic to Present: How COVID-19 Shaped Collaboration in Open Source Projects
 
 This repository contains the data, queries, and analysis code used in our study:
