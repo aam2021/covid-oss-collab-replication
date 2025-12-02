@@ -74,3 +74,25 @@ Several CSV files (e.g., `events_overview_table2.csv`, `event_slopes_pivot.csv`,
 `adf_results_by_event.csv`, group-specific slope and ADF tables) and PNG figures
 are written out. When running locally, place them in `data/processed/`; in Colab,
 you can download them and store them in that folder in this repository.
+
+## Environment Requirements
+
+The analysis notebook expects the following environment:
+
+- Python 3.10+
+- pandas ≥ 2.0
+- numpy ≥ 1.21
+- scipy ≥ 1.10
+- matplotlib ≥ 3.7
+- statsmodels ≥ 0.14
+- Jupyter / Google Colab
+
+BigQuery:
+- Google Cloud project with access to `githubarchive.day` public dataset
+
+## Citation
+
+If you use this replication package, please cite:
+
+McDaniel, A., Paplow, P., Valdez, C., & Garcia, S. (2025).  
+*From Pandemic to Present: How COVID-19 Shaped Collaboration in Open Source Projects.*
