@@ -30,10 +30,6 @@ statistical analysis, and figures reported in the paper.
   Derived tables and summary statistics produced by the notebook
   (e.g., figures, slopes per event, ADF results, group-level summaries).
 
-- `src/analysis.py` (optional)  
-  Minimal Python script version of the core analysis for users who prefer
-  running code locally instead of using Colab. The notebook remains the
-  authoritative reference.
 
 ## 2. How to re-extract the dataset from GH Archive (BigQuery)
 
